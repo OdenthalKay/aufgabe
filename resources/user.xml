@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<user>
+	<birthday>1991-08-23</birthday>
+	<listOfAddresses>
+		<address>
+			<plz>51069</plz>
+			<street>Von-Quadt-Str. 27a</street>
+			<town>Köln</town>
+		</address>
+		<address>
+			<plz>51065</plz>
+			<street>Holweider Str. 2a</street>
+			<town>Köln</town>
+		</address>
+	</listOfAddresses>
+	<listOfTelephoneNumbers>
+		<telephone-number>0221 123456</telephone-number>
+		<telephone-number>0221 837482</telephone-number>
+		<telephone-number>0221 364726</telephone-number>
+	</listOfTelephoneNumbers>
+</user>
