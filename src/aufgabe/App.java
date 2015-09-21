@@ -9,13 +9,7 @@ import java.util.List;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import javax.xml.bind.PropertyException;
 import javax.xml.bind.Unmarshaller;
-
-import org.joda.time.DateTime;
-import org.joda.time.Months;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
 
 public class App {
 
@@ -27,10 +21,10 @@ public class App {
 	}
 
 	public static void savePojoAsXml(Object object) throws FileNotFoundException, JAXBException {
-		JAXBContext contextObj = JAXBContext.newInstance(object.getClass());
-		Marshaller marshallerObj = contextObj.createMarshaller();
-		marshallerObj.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-		marshallerObj.marshal(object, new FileOutputStream("resources/user.xml"));
+		JAXBContext context = JAXBContext.newInstance(object.getClass());
+		Marshaller marshaller = context.createMarshaller();
+		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+		marshaller.marshal(object, new FileOutputStream("resources/user.xml"));
 	}
 
 	public static void main(String[] args) throws FileNotFoundException, JAXBException {
